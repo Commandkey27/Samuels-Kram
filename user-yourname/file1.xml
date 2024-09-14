@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Samuels Kram</name>
+		<name>file1</name>
 		<update version="1.0.0">
-			<file name="Samuels Kram.xml" url="https://raw.githubusercontent.com/Commandkey27/Samuels-Kram/master/user-yourname/Samuels Kram.xml" />
+			<file name="file1.xml" url="https://raw.githubusercontent.com/Commandkey27/Samuels-Kram/master/user-yourname/file1.xml" />
 		</update>
 	</info>
 	
