@@ -1,12 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>File 1</name>
+		<name>Samuels Kram</name>
 		<update version="1.0.0">
-			<file name="file1.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname/file1.xml" />
+			<file name="Samuels Kram.xml" url="https://raw.githubusercontent.com/Commandkey27/Samuels-Kram/master/user-Commandkey27/Samuels Kram.xml" />
 		</update>
 	</info>
 	
-	<!-- place your elements here -->
+	<elements>
+<!--  Half plate barding -->
+<element name="Half Plate Pferd" type="Armor" source="Samuel´s Kram" id="ID_HALF_PLATE_PFERD">
+<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+<description>
+<p>Eine Plattenrüstung für ein Reittier, die den Großteil des Bauches und den Hals bedeckt. Die Beine des Reittiers sind dabei nicht geschüzt.</p>
+</description>
+<setters>
+<set name="category">Armor</set>
+<set name="type">Armor</set>
+<set name="cost" currency="gp">1500</set>
+<set name="weight" lb="80">80 lb.</set>
+<set name="slot">body</set>
+<set name="armor">Medium</set>
+<set name="stealth">Disadvantage</set>
+<set name="amorClass">15 + Dex modifier (max 2)</set>
+<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
+</setters>
+<rules>
+<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+<stat name="ac:armored:armor" value="15"/>
+</rules>
+</element>
+<!--  Der Wildschweinspeer -->
+<element name="Wildschweinspeer" type="Magic Item" source="Samuel´s Kram" id="ID_DER_WILDSCHWEINSPEER">
+<description>
+<p>Ein Speer der zum Wildschweinjagen benutzt wird. Er ist magisch und ermöglicht es dem Träger bei einer long Rest advantage auf seinen Perception check zu bekommen.</p>
+</description>
+<setters>
+<set name="category">Wondrous Items</set>
+<set name="type">Wondrous Item</set>
+<set name="attunement">false</set>
+<set name="rarity">uncommon</set>
+<set name="weight" lb="10">10 lb.</set>
+</setters>
+</element>
+<!--  Bag of Cooling -->
+<element name="Bag of Cooling" type="Magic Item" source="Samuel´s Kram" id="ID_BAG_OF_COOLING">
+<description>
+<p>Eine Tasche, die immer 15lb. wiegt und in der man alle Lebensmittel und verderblichen Güter haltbar transportieren kann. Es passen 500lb. in die Tasche.</p>
+</description>
+<setters>
+<set name="category">Wondrous Items</set>
+<set name="type">Wondrous Item</set>
+<set name="attunement">false</set>
+<set name="stash" lb="500" weightless="true">true</set>
+<set name="rarity">uncommon</set>
+<set name="weight" lb="15">15 lb.</set>
+</setters>
+</element>
+<!--  Die Hufeisen des Zephyr -->
+<element name="Hufeisen des Zephyr" type="Magic Item" source="Samuel´s Kram" id="ID_HUFEISEN_DES_ZEPHYR">
+<description>
+<p>Hufeisen, die wenn sie auf ein Pferdehuf geschlagen werden, das Pferd 4 inch über dem Boden schwebt und difficult Terrain wird ignoriert und es werden keine Spuren hinterlassen.</p>
+</description>
+<setters>
+<set name="category">Wondrous Items</set>
+<set name="type">Wondrous Item</set>
+<set name="attunement">false</set>
+<set name="rarity">Rare</set>
+<set name="weight" lb="10">10 lb.</set>
+</setters>
+</element>
+<!--  Der Tischgrill / Herdplatte  -->
+<element name="Tischgrill" type="Magic Item" source="Samuel´s Kram" id="ID_TISCHGRILL">
+<description>
+<p>Eine rechteckige Schiefersteinplatte, die nach belieben aufgeheitzt werden kann und sich hervorragend dazu eignet Speisen zuzubereiten.</p>
+</description>
+<setters>
+<set name="category">Wondrous Items</set>
+<set name="type">Wondrous Item</set>
+<set name="attunement">false</set>
+<set name="rarity">Uncommon</set>
+<set name="weight" lb="25">25 lb.</set>
+</setters>
+</element>
+<!--  Brzz Bogen -->
+<element name="Brzz Bogen" type="Magic Item" source="Samuel´s Kram" id="ID_BRZZ_BOGEN">
+<description>
+<p>Ein Bogen, der zusätzlich bei jedem Schuss 1 Lightning Damage macht.</p>
+</description>
+<setters>
+<set name="keywords">longbow</set>
+<set name="category">Magic Weapons</set>
+<set name="cost" currency="gp">500</set>
+<set name="type" addition="longbow">Weapon</set>
+<set name="attunement">true</set>
+<set name="rarity">Uncommon</set>
+<set name="weapon">Longbow</set>
+</setters>
+</element>
+</elements>			
 	
 </elements>
